@@ -10,7 +10,7 @@ const forecast = (latitude, longlitude, callback) => {
             callback('Banu is angy')
         }
         else{
-            callback(undefined, "it is currently "+body.current.temperature+" degree celcius outside and it is "+body.current.weather_descriptions)
+            callback(undefined, "it is currently "+body.current.temperature+" degree celcius outside, it is "+body.current.weather_descriptions+" and it feels like "+body.current.feelslike)
         }
     }
     )
