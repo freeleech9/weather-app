@@ -7,7 +7,7 @@ const forecast = (latitude, longlitude, callback) => {
             callback('try again')
         }
         else if(body.error){
-            callback('Banu is angy')
+            callback('Please enter a city name')
         }
         else{
             callback(undefined, "it is currently "+body.current.temperature+" degree celcius outside and it is "+body.current.weather_descriptions+" where it feels like "+body.current.feelslike+" degree celcius")
